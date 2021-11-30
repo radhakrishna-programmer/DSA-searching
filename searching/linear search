@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        int key,i;
+        System.out.println("enter the array size");
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int[] arr=new int[n];
+        System.out.println("enter the numbers of array");
+        for ( i=0;i<n;i++)
+        {
+            arr[i]=input.nextInt();
+        }
+        System.out.println("enter the key element");
+        key=input.nextInt();
+        for( i=0;i<n;i++){
+            if(arr[i]==key){
+                System.out.println("key is fount at "+i);
+                break;
+            }
+            
+        }if( i==n)
+        System.out.println("the given key is not in the array");
+        
+        
+        }
+    }
+
